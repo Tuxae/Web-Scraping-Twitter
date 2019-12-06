@@ -65,3 +65,5 @@ with webdriver.Firefox() as driver:
 
         with open(f"pages/{account}.html", 'w') as f:
             f.write(driver.page_source)
+
+    driver.quit()
